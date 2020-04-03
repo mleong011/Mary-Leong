@@ -1,0 +1,183 @@
+/* Project 1 css file*/
+
+
+  body{
+    background-color: #4f688E;     /*this is treated as a fallback if gradient does not work (bluish)*/
+    color: #064747;
+    background: linear-gradient(#4f688E, #B373C1, #FFDEAA 75%, #FFFCAA) fixed;
+
+    font-family:
+      "trebuchet ms", "lucida grande", "courier new";
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 0;
+    }
+
+  h2{
+    margin-top: 0;
+    text-align: center;
+    text-emphasis-style:circle;
+  }
+
+  h3{
+    text-align: center;
+  }
+
+  .undernamehr{
+    width: 75%;
+    margin: auto;
+    border: 1px dashed white;
+
+  }
+
+  hr{
+    border: 2px solid #522C5A;
+  }
+
+  .links{
+    text-align: center;
+  }
+
+
+  a:link, a:visited, a:active{
+    font-family:fantasy;
+    font-weight: bold;
+    color:#064747;
+  }
+
+  a:hover{
+    font-size:115%;
+    text-decoration: overline;
+    font-weight: lighter;
+    color: #522C5A;
+  }
+
+  a.name{
+      text-decoration: none; /*removes formatting (underlined link)*/
+      color:#522C5A;
+      font-size: 120%;
+      font-family: fantasy;
+      background: none;
+  }
+
+  .socialmedia{
+    float:left;
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+  }
+
+  .dropbtn{
+    background-color: inherit;
+    color: #064747;
+    padding-top, padding-bottom: 2px;
+    padding-left, padding-right: 10px;
+    border-top, border-bottom: 1px solid black;
+    font-size: 16px;
+    font-family: fantasy;
+  }
+
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content{
+    display: none;
+    position: relative;
+    text-align: left;
+    min-width: 100px;
+  }
+
+  .dropdown:hover .dropdown-content{display: block;}
+  .dropdown:hover .dropbtn{background-color: inherit; color:#522C5A;}
+
+  .profile{
+    border-radius: 50%;
+    height:auto;
+    width: 90%;
+    border: 10px;
+  }
+
+  .linkedimage{
+    max-width: "30";
+  }
+
+  .linkedimage:hover{
+    width: 40px;
+  }
+
+  p{
+    text-indent: 50px;
+  }
+
+  .body{
+    float: left;
+    width: 55%;
+    padding: 0;
+    border: 10px;
+    font-size: 1.25em;
+  }
+
+  .bucketlist{
+    float:left;
+    padding: 0px;
+    width: 20%;
+  }
+
+  .gif{
+    width:90%;
+  }
+
+
+  .careertable{
+    float: left;
+    padding:20px;
+    width: 100%;
+  }
+
+  table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+
+
+
+  @media only screen and (max-width: 800px){
+    .socialmedia{
+      width:30%;
+    }
+    .profile{
+      width: 70%;
+    }
+    .body{
+      width:70%;
+      font-size: 125%;
+    }
+    .careertable{
+      width:80%;
+      font-size: 80%;
+      font-weight: bold;
+    }
+  }
+
+  /* Use a media query to add a break point at 600: mobile phones */
+  @media only screen and (max-width:600px){
+    a.name{
+      font-size: 80%;
+    }
+    .profile{
+      width: 50%;
+    }
+    .socialmedia, .body, .bucketlist, .careertable{
+      width:100%;
+    }
+  }
